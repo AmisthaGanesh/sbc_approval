@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class SearchComponent {
   active:string='process';//uaguwdygwuygweuoygwe
   // handleProcessData(value: string) {
+//hello
 
-  
   //   console.log('Received from Process Search:', value);
   // }
 }
