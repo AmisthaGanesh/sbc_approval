@@ -1,0 +1,100 @@
+<!-- Actuall information start -->
+    <div class="border border-2 border-dark m-0 p-2 ">
+    <p class="text-center">
+      <span class="text-white px-4 bg-dark rounded-top-0 rounded-bottom-3">Initiation Screen</span>
+    </p>
+   <div class="border border-2 border-dark m-4 g-col-12">
+   <h5 class="text-white bg-dark p-3 m-0">Details</h5>
+    <form action="self" class="row g-3 p-4">
+
+      <div class="col-md-4">
+        <label for="requestid" class="form-label">Request ID</label>
+        <input type="text" class="form-control" id="requestid" name="requestid" >
+      </div>
+
+      <div class="col-md-4">
+        <label for="initiationdate" class="form-label">Initiation Date</label>
+        <input type="date" class="form-control" id="initiationdate" name="initiationdate">
+      </div>
+
+      <div class="col-md-4">
+        <label for="selection" class="form-label">Sector</label>
+        <select class="form-select" id="selection" name="selection">
+          <option selected disabled>--Select--</option>
+          <option value="AD">AD</option>
+          <option value="FD">FD</option>
+          <option value="MTWD">MTWD</option>
+          <option value="ME&POWEROL">ME & POWEROL</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="project" class="form-label">Project</label>
+        <select class="form-select" id="project" name="project">
+          <option selected disabled>--Select--</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="authority" class="form-label">Approving Authority</label>
+        <select class="form-select" id="authority" name="authority">
+          <option selected disabled>-Select--</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="disc" class="form-label">Part Description</label>
+        <select class="form-select" id="disc" name="disc">
+          <option selected disabled>-Select--</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label for="remark" class="form-label">Remarks</label>
+        <textarea name="remark" id="remark" class="form-control" rows="3"></textarea>
+      </div>
+
+      <div class="row mt-4">
+      <label for="Manager" class="col-2 form-label">Module Manager</label>
+      <div class="col-3">
+      <div class="input-group">
+      <input type="text" class="form-control" id="Manager">
+      <span class="input-group-text bg-danger text-white">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+     </div>
+     </div>
+     </div>
+
+      <div class="row mt-3">
+      <label for="Commodity"  class="col-2 form-label">Commodity HOD</label>
+      <div class="col-3">
+      <div class="input-group">
+      <input type="text" class="form-control" id="HOD">
+      <span class="input-group-text bg-danger text-white">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+     </div>
+     </div>
+      </div>
+
+      <div class="row mt-3">
+      <label for="PCM"  class="col-2 form-label">PCM Head</label>
+      <div class="col-3">
+      <div class="input-group">
+      <input type="text" class="form-control" id="Head">
+      <span class="input-group-text bg-danger text-white">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+     </div>
+     </div>
+      </div>
+      <div class="d-flex justify-content-end gap-2 mb-4">
+        <button class="bg-danger text-white rounded-2"><i class="fa-regular fa-file-lines"></i> Save</button>
+        <button class="bg-danger text-white rounded-2"><i class="fa-regular fa-file-lines"></i> Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+
+

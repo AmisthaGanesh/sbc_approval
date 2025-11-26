@@ -1,0 +1,153 @@
+<div class="g-col-12 d-flex gap-3 ">
+    <div class="border border-2 border-dark col-4 m-0">
+        <div class="bg-dark p-2">
+   <span class="bg-white text-dark px-4 p-1 start-0 ">Filter</span>
+    </div>
+       <div class=" form-control container mt-3">
+      <form action="self" name="processSearch">
+     <div class="d-grid" style="grid-template-columns: 150px 1fr; row-gap: 10px; column-gap: 15px; align-items: center;">
+      <label for="ID" class="form-label">Request ID</label>
+      <input type="text" class="form-control" id="ID" name="request">
+
+      <label for="sector" class="form-label">Sector</label>
+      <select name="sector" id="sector" class="form-select">
+        <option selected disabled>--Select--</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="approve" class="form-label">Approving Authority</label>
+      <select class="form-select" name="approve" id="approve">
+        <option selected disabled>--Select--</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="project" class="form-label">Project</label>
+      <select class="form-select" name="project" id="project">
+        <option selected disabled>--Select--</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="part" class="form-label">Part Description</label>
+      <select class="form-select" name="part" id="part">
+        <option selected disabled>--Select--</option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="status" class="form-label">Status</label>
+      <select class="form-select" name="status" id="status">
+        <option selected disabled>--Select--</option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <label for="initiator" class="form-label">Initiator</label>
+      <div class="input-group">
+        <input type="text" class="form-control" name="initiator">
+        <span class="input-group-text text-white bg-danger"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+
+      <label for="initiateFrom" class="form-label">Initiated From</label>
+      <input type="text" class="form-control" name="initiateFrom" id="initiateFrom">
+      
+      <label for="initiateTo" class="form-label">Initiated To</label>
+      <input type="text" class="form-control" name="initiateTo" id="initiateTo">
+
+      <label for="holder" class="form-label">Current Holder</label>
+      <div class="input-group">
+        <input type="text" class="form-control" name="current">
+        <span class="input-group-text text-white bg-danger"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+
+      <div class="form-check mt-3">
+        <input type="checkbox" class="form-check-input" id="revision"> Show Latest Revision
+      </div>
+    </div>
+     <div class="d-flex gap-2 justify-content-end mb-4">
+        <button class="bg-danger text-white rounded-3 p-2">Search</button>
+        <button class="bg-danger text-white rounded-3 p-2">Clear</button>
+      </div>
+   </form>
+    </div>
+    </div>
+
+  <!-- table info -->
+  <div class="col-8 mt-0">
+    <div class="d-flex gap-2 mb-5">
+      <button class="btn btn-danger rounded-1 p-1"><i class="fa-solid fa-file-export"></i> Export to Excel</button>
+      <button class="btn btn-danger rounded-1 p-1"><i class="fa-solid fa-file-pdf"></i> PDF</button>
+      <button class="btn btn-danger rounded-1 p-1">Revise</button>
+    </div>
+    <div class="justify-content-end mt-0 mb-0">
+     <nav aria-label="Page navigation example">
+  <ul class="pagination"><span>No of records :0</span>
+    <li class="page-item">
+      <a class="page-link bg-danger text-white" href="#" aria-label="First">
+        << 
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-danger text-white" href="#" aria-label="Previous">
+        < 
+      </a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link bg-transparent border-0" href="#" tabindex="-1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-danger text-white" href="#" aria-label="Next">
+        > 
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-danger text-white" href="#" aria-label="Last">
+        >> 
+      </a>
+    </li>
+    <span>page 1 of 10</span>
+  </ul>
+</nav>
+</div>
+  <div class="table-responsive">
+  <table class="table table-bordered border-white">
+    <thead class="table-dark text-center text-truncate">
+        <tr>
+          <th><span class="d-inline-block border border-white bg-white p-2"></span></th>
+          <th>Request ID</th>
+          <th>Sector</th>
+          <th>Approving Authority</th>
+          <th>Project</th>
+          <th>Part Description</th>
+          <th>Initiator</th>
+          <th>Initiated On</th>
+          <th>Current Stage</th>
+          <th>Current Holder</th>
+          <th>Status</th>
+          <th>Revision</th>
+        </tr>
+      </thead>
+      <tbody class="text-center text-truncate">
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          </tr>
+          <tr>
+           <td></td>
+           </tr>
+           <tr>
+           <td></td>
+           </tr>
+           <tr>
+           <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+

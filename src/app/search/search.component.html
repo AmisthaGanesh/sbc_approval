@@ -1,0 +1,17 @@
+ <!-- actuall data info -->
+<div class="d-flex mt-5">
+  <button
+    class="btn me-2"
+    [ngClass]="active === 'process' ? 'btn-secondary text-white' : 'btn-light text-dark'"
+    (click)="active = 'process'" routerLink="process-search"> Process Search</button>
+
+  <button class="btn" [ngClass]="active === 'saved' ? 'btn-secondary text-white' : 'btn-light text-dark'" 
+  (click)="active = 'saved'" routerLink="saved-search"> Saved Search</button>
+</div>
+
+<hr class="mt-0 border border-dark border-1">
+<router-outlet></router-outlet>
+
+
+
+
